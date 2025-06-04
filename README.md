@@ -41,7 +41,7 @@ us-chocolate-bravo/
    cd mern-with-docker
 ````
 
-````markdown
+
 2. Create `.env` files
 
    - In `backend/`:

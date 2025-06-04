@@ -39,38 +39,26 @@ us-chocolate-bravo/
    ```bash
    git clone https://github.com/kishgi/mern-with-docker.git
    cd mern-with-docker
-````
+   ````
 
 
-Here's the corrected Markdown for **only** that section — properly formatted so it doesn't get rendered as a code block:
+- In `backend/`:
 
-````markdown
-2. Create `.env` files
+  ```bash
+  cp backend/.env.example backend/.env
 
-   - In `backend/`:
 
-     ```bash
-     cp backend/.env.example backend/.env
-     ```
+* In `frontend/`:
 
-   - In `frontend/`:
+  ```bash
+  cp frontend/.env.example frontend/.env
+  ```
 
-     ```bash
-     cp frontend/.env.example frontend/.env
-     ```
-
-   Then edit the `.env` files to match your environment needs.
-
-### 🐳 Run the App with Docker Compose
+Then edit the `.env` files to match your environment needs.
 
 ```bash
 docker-compose up --build
-````
-
 ```
-```
-
-
 
 * Frontend: [http://localhost:5173](http://localhost:5173)
 * Backend: [http://localhost:5000](http://localhost:5000)

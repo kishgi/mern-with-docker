@@ -62,7 +62,7 @@ us-chocolate-bravo/
 
 ```bash
 docker-compose up --build
-````
+
 
 * Frontend: [http://localhost:5173](http://localhost:5173)
 * Backend: [http://localhost:5000](http://localhost:5000)

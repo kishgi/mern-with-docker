@@ -1,11 +1,9 @@
----
 
-### ✅ `README.md`
-
-```markdown
 # MERN with Docker 🐳
 
 This is a full-stack MERN (MongoDB, Express.js, React, Node.js) project containerized using Docker and managed with Docker Compose.
+
+---
 
 ## 📁 Project Structure
 
@@ -37,6 +35,7 @@ us-chocolate-bravo/
 ### 📦 Setup Instructions
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/kishgi/mern-with-docker.git
    cd mern-with-docker
@@ -66,9 +65,9 @@ us-chocolate-bravo/
 docker-compose up --build
 ```
 
-* Frontend will run on: [http://localhost:5173](http://localhost:5173)
-* Backend will run on: [http://localhost:5000](http://localhost:5000)
-* MongoDB will run internally at `mongo:27017`
+* Frontend: [http://localhost:5173](http://localhost:5173)
+* Backend: [http://localhost:5000](http://localhost:5000)
+* MongoDB: Internal at `mongo:27017`
 
 ---
 
@@ -76,23 +75,23 @@ docker-compose up --build
 
 ### Frontend
 
-* Dev mode (if running manually):
+If you prefer to run frontend manually:
 
-  ```bash
-  cd frontend
-  npm install
-  npm run dev
-  ```
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
 ### Backend
 
-* Dev mode (if running manually):
+If you prefer to run backend manually:
 
-  ```bash
-  cd backend
-  npm install
-  npm run dev
-  ```
+```bash
+cd backend
+npm install
+npm run dev
+```
 
 ---
 
@@ -121,7 +120,7 @@ To stop and remove containers:
 docker-compose down
 ```
 
-To remove all containers, images, volumes:
+To remove all containers, images, and volumes:
 
 ```bash
 docker system prune -a
@@ -137,14 +136,11 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 🙌 Contributions
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to change.
 
 ---
 
 ## 🔗 Connect
 
 Feel free to fork, star ⭐, and contribute!
-
-```
-
 

@@ -1,3 +1,150 @@
-# mern-with-docker
-# mern-with-docker
-# mern-with-docker
+---
+
+### ✅ `README.md`
+
+```markdown
+# MERN with Docker 🐳
+
+This is a full-stack MERN (MongoDB, Express.js, React, Node.js) project containerized using Docker and managed with Docker Compose.
+
+## 📁 Project Structure
+
+```
+
+us-chocolate-bravo/
+├── backend/           # Express.js backend
+│   ├── Dockerfile
+│   └── ...
+├── frontend/          # React frontend (Vite or CRA)
+│   ├── Dockerfile
+│   └── ...
+├── docker-compose.yml
+└── README.md
+
+````
+
+---
+
+## 🚀 Getting Started
+
+### 🔧 Prerequisites
+
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
+---
+
+### 📦 Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/kishgi/mern-with-docker.git
+   cd mern-with-docker
+````
+
+2. **Create `.env` files**
+
+   * In `backend/`:
+
+     ```bash
+     cp backend/.env.example backend/.env
+     ```
+
+   * In `frontend/`:
+
+     ```bash
+     cp frontend/.env.example frontend/.env
+     ```
+
+   Then edit the `.env` files to match your environment needs.
+
+---
+
+### 🐳 Run the App with Docker Compose
+
+```bash
+docker-compose up --build
+```
+
+* Frontend will run on: [http://localhost:5173](http://localhost:5173)
+* Backend will run on: [http://localhost:5000](http://localhost:5000)
+* MongoDB will run internally at `mongo:27017`
+
+---
+
+## ⚙️ Available Scripts
+
+### Frontend
+
+* Dev mode (if running manually):
+
+  ```bash
+  cd frontend
+  npm install
+  npm run dev
+  ```
+
+### Backend
+
+* Dev mode (if running manually):
+
+  ```bash
+  cd backend
+  npm install
+  npm run dev
+  ```
+
+---
+
+## 🗂️ Environment Variables
+
+### `backend/.env.example`
+
+```env
+PORT=5000
+MONGO_URI=mongodb://mongo:27017/mydatabase
+```
+
+### `frontend/.env.example`
+
+```env
+VITE_API_URL=http://localhost:5000
+```
+
+---
+
+## 🧼 Cleaning Up
+
+To stop and remove containers:
+
+```bash
+docker-compose down
+```
+
+To remove all containers, images, volumes:
+
+```bash
+docker system prune -a
+```
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 🙌 Contributions
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+---
+
+## 🔗 Connect
+
+Feel free to fork, star ⭐, and contribute!
+
+```
+
+

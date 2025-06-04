@@ -1,4 +1,3 @@
-
 # MERN with Docker 🐳
 
 This is a full-stack MERN (MongoDB, Express.js, React, Node.js) project containerized using Docker and managed with Docker Compose.
@@ -115,6 +114,3 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## 🔗 Connect
 
 Feel free to fork, star ⭐, and contribute!
-
-
-

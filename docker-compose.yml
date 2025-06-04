@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: backend
+    ports:
+      - "5000:5000"
+    networks:
+      - chocolate-bravo
+    environment:
+      - MONGO_URI=mongodb+srv://amandithathsaraniuni1:pass4you@cluster0.1g9am.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      - NODE_ENV=production
+      - PORT=5000
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - REACT_APP_API_URL=http://backend:5000
+    networks:
+      - chocolate-bravo
+    restart: unless-stopped
+
+networks:
+  chocolate-bravo:
+    driver: bridge

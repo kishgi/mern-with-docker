@@ -42,6 +42,9 @@ us-chocolate-bravo/
 ````
 
 
+Here's the corrected Markdown for **only** that section — properly formatted so it doesn't get rendered as a code block:
+
+````markdown
 2. Create `.env` files
 
    - In `backend/`:
@@ -62,6 +65,11 @@ us-chocolate-bravo/
 
 ```bash
 docker-compose up --build
+````
+
+```
+```
+
 
 
 * Frontend: [http://localhost:5173](http://localhost:5173)

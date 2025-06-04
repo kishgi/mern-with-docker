@@ -41,15 +41,16 @@ us-chocolate-bravo/
    cd mern-with-docker
 ````
 
-2. **Create `.env` files**
+````markdown
+2. Create `.env` files
 
-   * In `backend/`:
+   - In `backend/`:
 
      ```bash
      cp backend/.env.example backend/.env
      ```
 
-   * In `frontend/`:
+   - In `frontend/`:
 
      ```bash
      cp frontend/.env.example frontend/.env
@@ -57,25 +58,19 @@ us-chocolate-bravo/
 
    Then edit the `.env` files to match your environment needs.
 
----
-
 ### 🐳 Run the App with Docker Compose
 
 ```bash
 docker-compose up --build
-```
+````
 
 * Frontend: [http://localhost:5173](http://localhost:5173)
 * Backend: [http://localhost:5000](http://localhost:5000)
 * MongoDB: Internal at `mongo:27017`
 
----
-
 ## ⚙️ Available Scripts
 
 ### Frontend
-
-If you prefer to run frontend manually:
 
 ```bash
 cd frontend
@@ -85,15 +80,11 @@ npm run dev
 
 ### Backend
 
-If you prefer to run backend manually:
-
 ```bash
 cd backend
 npm install
 npm run dev
 ```
-
----
 
 ## 🗂️ Environment Variables
 
@@ -110,37 +101,24 @@ MONGO_URI=mongodb://mongo:27017/mydatabase
 VITE_API_URL=http://localhost:5000
 ```
 
----
-
 ## 🧼 Cleaning Up
-
-To stop and remove containers:
 
 ```bash
 docker-compose down
-```
-
-To remove all containers, images, and volumes:
-
-```bash
 docker system prune -a
 ```
-
----
 
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
 
----
-
 ## 🙌 Contributions
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to change.
 
----
-
 ## 🔗 Connect
 
 Feel free to fork, star ⭐, and contribute!
+
+
 

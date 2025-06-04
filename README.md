@@ -1,9 +1,7 @@
-
+```markdown
 # MERN with Docker 🐳
 
 This is a full-stack MERN (MongoDB, Express.js, React, Node.js) project containerized using Docker and managed with Docker Compose.
-
----
 
 ## 📁 Project Structure
 
@@ -21,8 +19,6 @@ us-chocolate-bravo/
 
 ````
 
----
-
 ## 🚀 Getting Started
 
 ### 🔧 Prerequisites
@@ -30,18 +26,16 @@ us-chocolate-bravo/
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
----
-
 ### 📦 Setup Instructions
 
-1. **Clone the repository**
+1. Clone the repository
 
    ```bash
    git clone https://github.com/kishgi/mern-with-docker.git
    cd mern-with-docker
 ````
 
-2. **Create `.env` files**
+2. Create `.env` files
 
    * In `backend/`:
 
@@ -55,9 +49,7 @@ us-chocolate-bravo/
      cp frontend/.env.example frontend/.env
      ```
 
-   Then edit the `.env` files to match your environment needs.
-
----
+   Edit the `.env` files as needed.
 
 ### 🐳 Run the App with Docker Compose
 
@@ -69,13 +61,9 @@ docker-compose up --build
 * Backend: [http://localhost:5000](http://localhost:5000)
 * MongoDB: Internal at `mongo:27017`
 
----
-
 ## ⚙️ Available Scripts
 
 ### Frontend
-
-If you prefer to run frontend manually:
 
 ```bash
 cd frontend
@@ -85,15 +73,11 @@ npm run dev
 
 ### Backend
 
-If you prefer to run backend manually:
-
 ```bash
 cd backend
 npm install
 npm run dev
 ```
-
----
 
 ## 🗂️ Environment Variables
 
@@ -110,35 +94,20 @@ MONGO_URI=mongodb://mongo:27017/mydatabase
 VITE_API_URL=http://localhost:5000
 ```
 
----
-
 ## 🧼 Cleaning Up
-
-To stop and remove containers:
 
 ```bash
 docker-compose down
-```
-
-To remove all containers, images, and volumes:
-
-```bash
 docker system prune -a
 ```
-
----
 
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
 
----
-
 ## 🙌 Contributions
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to change.
-
----
+Pull requests are welcome. For major changes, open an issue to discuss what you want to change.
 
 ## 🔗 Connect
 
